@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inline notifications test</title>
+    <link rel="stylesheet" href="inln-notify.min.css">
+    <script src="inln-notify.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <script>
+      Notify(document.body, 'succ', 'Cool, it worked!', 4, 2500)
+      Notify(document.body, 'succ', 'Cool, it worked!', 3, 2500)
+    </script>
+
+    <center>
+      <button type="button" onclick="Notify(this, 'succ', 'Success!', 2)">< Success</button>
+      <button type="button" onclick="Notify(this, 'warn', 'Warning!')">Warning ></button>
+    </center>
+  </body>
+</html>
